@@ -58,6 +58,7 @@ for(var i = 1;i <= 50; i ++) {
 }
 
 //Task7
+
 var num = 1000;
 
 for(i = 0; num >= 50; i++) {
