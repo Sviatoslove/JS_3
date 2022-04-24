@@ -1,69 +1,85 @@
 //Task1
-"42" == 42 // true;
-"0" == 0 // true;
-"0" == false // true;
-"true" == true // true;
-true == (1 == "1") // true;
 
-"42" === 42 // false;
-"0" === 0 // false;
-"0" === false // false;
-"true" === true // false;
-true === (1 === "1") // false;
+var i = 30;
+
+while(i < 40) {
+  i ++;
+  if(i%2) console.log(i);
+}
 
 //Task2
-var a = 'foo';
-var b = 'bar';
-var result = a+ ' ' +b; // foo bar;
 
-//Task3
-"ананас" > "яблоко" // false;
-undefined == null // true;
-undefined === null // false;console.log(
+for(var i = 70; i >39; i--) {
+  if(i%2 == 0) console.log(i);
+}
+
+//Task 3
+
+var i = 70;
+git remote -v
+while(i>39) {
+  if(i%2 == 0) console.log(i);
+  i--;
+}
 
 //Task4
-var a = 1;
 
-if(a > 10 && a < 12) {
-  console.log('Тебе пора домой идти "а" больше 10');
-}else if(a < 10 && a > 0) {
-  console.log('Опана, можно ещё подремать, раньше десяти не буду вставать!');
-}else if(a == 10) {
-  console.log('Вставать - учить JS - бежать');
-}else if(a == 12) {
-  console.log('Коснулся, будто вечности я, конца учёбе не видать!!!');
-}else{
-  console.log('Ничего себе, "а" - это строка???');
+var total = 0;
+
+for(i = 1; i <= 100; i++){
+  total += i;
 }
+console.log(total);
 
 //Task5
 
-a > 10 && a < 12 ? console.log('Тебе пора домой идти "а" больше 10'):
-a < 10 && a > 0 ? console.log('Опана, можно ещё подремать, раньше десяти не буду вставать!'):
-a == 10 ? console.log('Вставать - учить JS - бежать'):
-a == 12 ? console.log('Коснулся, будто вечности я, конца учёбе не видать!!!'):
-console.log('Ничего себе, "а" - это строка???');
+for(i = 0; i <= 9; i++) {
+  if(i<1) {console.log(':)');
+  } else if(i < 2) {console.log(':)',':)');
+  } else if(i < 3) {console.log(':)',':)',':)');
+  } else if(i < 4) {console.log(':)',':)',':)',':)');
+  } else if(i < 5) {console.log(':)',':)',':)',':)',':)');
+  } else if(i < 6) {console.log(':)',':)',':)',':)',':)',':)');
+  } else if(i < 7) {console.log(':)',':)',':)',':)',':)',':)',':)');
+  } else if(i < 8) {console.log(':)',':)',':)',':)',':)',':)',':)',':)');
+  } else if(i < 9) {console.log(':)',':)',':)',':)',':)',':)',':)',':)',':)');
+  } else if(i < 10) {console.log(':)',':)',':)',':)',':)',':)',':)',':)',':)',':)');
+  }
+}
 
 //Task6
 
-var question = prompt('Чтобы перейти дальше, угадайте пожалуйста одно из пяти мною загаданных чисел в диапазоне от 1 до 100:');
+for(var i = 1;i <= 50; i ++) {
+  if(i % 3 == 0 && i % 5 == 0) {console.log('JavaScript');
+  }else if(i % 5 === 0) {console.log('Script');
+  }else if(i % 3 === 0) {console.log('Java');
+  }else {console.log(i);
+  }
+}
 
-switch(question) {
-  case '19' :
-    alert ('Вы угадали число');
-    break;
-  case '21' :
-    alert ('Вы угадали число');
-    break;
-  case '30' :
-    alert ('Вы угадали число');
-    break;
-  case '31' :
-    alert ('Вы угадали число');
-    break;
-  case '36' :
-    alert ('Вы угадали число');
-    break;
-  default :
-    alert ('Вы не угадали. Попробуйте ещё раз!');
+//Task7
+var num = 1000;
+
+for(i = 0; num >= 50; i++) {
+  num = num/2;
+}
+
+console.log('Итераций: ' + i +', получилось число ' + num);
+
+//Task8
+
+var i = 45;
+
+while(i <= 170) {
+  if(i % 10 === 0){console.log(i)}
+  i++;
+}
+
+//Task9
+
+for(i = 0; i <= 3; i++) {
+  if(i < 1) {console.log(1,2,3);
+  } else if(i < 2) {console.log(4,5,6);
+  } else if(i < 3) {console.log(7,8,9);
+  }
 }
