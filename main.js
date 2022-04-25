@@ -16,7 +16,7 @@ for(var i = 70; i >39; i--) {
 //Task 3
 
 var i = 70;
-git remote -v
+
 while(i>39) {
   if(i%2 == 0) console.log(i);
   i--;
@@ -33,18 +33,11 @@ console.log(total);
 
 //Task5
 
+var smile = ':)';
+
 for(i = 0; i <= 9; i++) {
-  if(i<1) {console.log(':)');
-  } else if(i < 2) {console.log(':)',':)');
-  } else if(i < 3) {console.log(':)',':)',':)');
-  } else if(i < 4) {console.log(':)',':)',':)',':)');
-  } else if(i < 5) {console.log(':)',':)',':)',':)',':)');
-  } else if(i < 6) {console.log(':)',':)',':)',':)',':)',':)');
-  } else if(i < 7) {console.log(':)',':)',':)',':)',':)',':)',':)');
-  } else if(i < 8) {console.log(':)',':)',':)',':)',':)',':)',':)',':)');
-  } else if(i < 9) {console.log(':)',':)',':)',':)',':)',':)',':)',':)',':)');
-  } else if(i < 10) {console.log(':)',':)',':)',':)',':)',':)',':)',':)',':)',':)');
-  }
+  console.log(smile);
+  smile += ':)';
 }
 
 //Task6
@@ -72,15 +65,18 @@ console.log('Итераций: ' + i +', получилось число ' + num
 var i = 45;
 
 while(i <= 170) {
-  if(i % 10 === 0){console.log(i)}
   i++;
+  if(i % 10 === 0){console.log(i)}
 }
 
 //Task9
 
-for(i = 0; i <= 3; i++) {
-  if(i < 1) {console.log(1,2,3);
-  } else if(i < 2) {console.log(4,5,6);
-  } else if(i < 3) {console.log(7,8,9);
+var num = '';
+
+for(i = 19;i <= 27;i++) {
+  if(i % 3 != 0) {num += i + ' ';
+  } else {num += i;
+    console.log(num);
+    num = '';
   }
 }
